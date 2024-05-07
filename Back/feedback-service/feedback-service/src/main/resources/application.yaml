@@ -1,0 +1,21 @@
+
+server:
+  port: 8088
+spring:
+  application:
+    name: feedback-service
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        dialect: org.hibernate.dialect.Oracle10gDialect
+
+  threads:
+    virtual:
+      enabled: true
+
+
+
